@@ -1,5 +1,5 @@
 # Asymmetric-GridView
 
-Display image like this
+Display GridView like this
 
 ![GridView](./image.jpg)
