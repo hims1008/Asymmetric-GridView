@@ -38,11 +38,7 @@ public class QuiltView extends FrameLayout implements OnGlobalLayoutListener {
 			 
 		String orientation = a.getString(R.styleable.QuiltView_scrollOrientation);
 		if(orientation != null){
-			if(orientation.equals("vertical")){
-				isVertical = true;
-			} else {
-				isVertical = false;
-			}
+			isVertical = orientation.equals("vertical");
 		}
 		setup();
 	}

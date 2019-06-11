@@ -60,11 +60,8 @@ public class QuiltViewBase extends GridLayout {
     }
 
     public void addPatch(View view) {
-
         int count = this.getChildCount();
-
         QuiltViewPatch child = QuiltViewPatch.init(count, columns);
-
         GridLayout.LayoutParams params = new GridLayout.LayoutParams();
         params.width = size[0] * child.width_ratio;
         params.height = size[1] * child.height_ratio;

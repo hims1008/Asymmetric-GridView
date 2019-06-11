@@ -21,7 +21,7 @@ public class MainActivity extends Activity {
 		setContentView(R.layout.activity_main);
 		quiltView = (QuiltView) findViewById(R.id.quilt);
 		quiltView.setChildPadding(5);
-		addTestQuilts(10);
+		addTestQuilts(200);
 	}
 	
 	public void addTestQuilts(int num){
@@ -39,6 +39,7 @@ public class MainActivity extends Activity {
 		Log.e("i==", images.toString());
 		quiltView.addPatchImages(images);
 	}
+
 
 }
 
