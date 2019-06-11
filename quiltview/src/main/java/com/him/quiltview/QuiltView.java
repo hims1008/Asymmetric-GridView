@@ -83,6 +83,7 @@ public class QuiltView extends FrameLayout implements OnGlobalLayoutListener {
 		setViewsFromAdapter(adapter);
 	}
 
+
 	private void setViewsFromAdapter(Adapter adapter) {
 		this.removeAllViews();
 		for(int i = 0; i < adapter.getCount(); i++){
