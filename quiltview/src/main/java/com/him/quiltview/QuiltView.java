@@ -30,7 +30,8 @@ public class QuiltView extends FrameLayout implements OnGlobalLayoutListener {
 		this.isVertical = isVertical;
 		setup();
 	}
-	
+
+
 	public QuiltView(Context context, AttributeSet attrs) {
 		super(context, attrs);
 		TypedArray a = context.obtainStyledAttributes(attrs,
