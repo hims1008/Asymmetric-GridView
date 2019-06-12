@@ -55,7 +55,7 @@ public class QuiltViewPatch implements Comparable{
 //		case 5:
 //			return init1(position);
 //		}
-		init1(position);
+		return init1(position);
 //		return init3(position);
 	}
 	private static QuiltViewPatch init1(int position){

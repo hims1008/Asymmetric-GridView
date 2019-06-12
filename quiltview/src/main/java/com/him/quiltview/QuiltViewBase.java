@@ -123,7 +123,7 @@ public class QuiltViewBase extends GridLayout {
         if (view_width < 500) {
             columns = 2;
         } else if (view_width < 801) {
-            columns = 4;
+            columns = 3;
         } else if (view_width < 1201) {
             columns = 4;
         } else if (view_width < 1601) {
@@ -131,6 +131,7 @@ public class QuiltViewBase extends GridLayout {
         } else {
             columns = 6;
         }
+        columns=4;
         return (view_width / columns);
     }
 
