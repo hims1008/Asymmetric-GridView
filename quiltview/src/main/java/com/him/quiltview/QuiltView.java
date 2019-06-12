@@ -96,10 +96,8 @@ public class QuiltView extends FrameLayout implements OnGlobalLayoutListener {
 	}
 
 	public void addPatchImage(ImageView image){
-
 		FrameLayout.LayoutParams params = new FrameLayout.LayoutParams(FrameLayout.LayoutParams.MATCH_PARENT, FrameLayout.LayoutParams.MATCH_PARENT);
 		image.setLayoutParams(params);
-
 		LinearLayout wrapper = new LinearLayout(this.getContext());
 		wrapper.setPadding(padding, padding, padding, padding);
 		wrapper.addView(image);

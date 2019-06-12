@@ -45,18 +45,18 @@ public class QuiltViewPatch implements Comparable{
 	}
 	
 	public static QuiltViewPatch init(int position, int column){
-		switch(column){
-		case 2:
-			return init2(position);
-		case 3:
-			return init3(position);
-		case 4:
-			return init4(position);
-		case 5:
-			return init5(position);
-		}
-		
-		return init3(position);
+//		switch(column){
+//		case 2:
+//			return init1(position);
+//		case 3:
+//			return init1(position);
+//		case 4:
+//			return init1(position);
+//		case 5:
+//			return init1(position);
+//		}
+		init1(position);
+//		return init3(position);
 	}
 	private static QuiltViewPatch init1(int position){
 		switch(position % 8){
@@ -71,11 +71,11 @@ public class QuiltViewPatch implements Comparable{
 			case 4:
 				return create(Size.Tall);
 			case 5:
-				return create(Size.Small);
+				return create(Size.Big);
 			case 6:
 				return create(Size.Small);
 			case 7:
-				return create(Size.Big);
+				return create(Size.Small);
 
 		}
 		return create(Size.Small);
